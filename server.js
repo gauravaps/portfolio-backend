@@ -24,10 +24,10 @@ app.use(cookieParser())
 
 
  
-// query router
+// query router....
 app.use('/', router);
 
-//add project route
+//add project route..
 app.use('/' , projectRouter);
 
    
