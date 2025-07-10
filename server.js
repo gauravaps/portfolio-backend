@@ -10,12 +10,21 @@ const cookieParser =require('cookie-parser')
  
 
 dotenv.config();
-const app=express()
+const app=express();
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors());
 app.use(express.static('public'))
 app.use(cookieParser())
+
+
+// app.use(cors({
+//   origin: 'https://gauravaps.netlify.app',
+//   credentials: true,
+// }));
+
+// app.options('*', cors());
+
  
    
  
